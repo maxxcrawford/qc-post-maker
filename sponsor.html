@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>200ok Sponsor Template</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:700" rel="stylesheet">
+		<link rel="stylesheet" href="css/page-style.css">
+	</head>
+
+	<body class="red">
+        <canvas id="canvas" width="800" height="450"></canvas>
+        <div class="title-wrapper">
+            <h1>200ok Sponsor Card Maker</h1>
+        </div>
+		<a class="btn" href="index.html">Switch to Speaker Card Maker</a>
+		<div id="sponsor-wrapper">
+    		<div id="card-display" class="">
+                <link rel="stylesheet" href="css/card-style.css">
+    			<div class="card speaker sponsor">
+        			<div class="content-wrapper ">
+        				<img class="logo" src='images/logo.svg' />
+        				<div class="speaker-content-wrapper">
+        					<div class="speaker-content">
+        						<div class="subhead">Thank you to</div>
+        						<!-- Speaker Name -->
+        						<div class="headline headline-large">{{ sponsor }}</div>
+
+        						<!-- Talk Name -->
+        						<div class="headline red headline-sponsorship">{{ level }}</div>
+								<div class="subhead subhead-sponsorship ">Sponsorship Level</div>
+        					</div>
+        				</div>
+								<div class="date">May 18, 2018 <span>Tulsa, OK</span></div>
+        			</div>
+					<div class="photo-wrapper">
+        				<div class="photo">
+        					<!-- Replace image here  -->
+        					<img v-bind:src="image_url" alt="">
+        				</div>
+        			</div>
+    			</div>
+                <!-- Form -->
+    			<form>
+    				<label>Sponsor Name</label>
+    				<input type="text" v-model="sponsor" placeholder="Mozilla Dev Group">
+    				<label>Sponsorship Level</label>
+                    <input v-model="level" type="text" placeholder="<title>">
+    				<label>Image URL</label>
+    				<input type="text" v-model="image_url" placeholder="http://placehold.it/400x400.jpg">
+    			</form>
+    		</div>
+		</div>
+        <!-- Results-->
+        <div class="download-wrapper">
+            <a id="download" download="card.png" class="button">Generate Image</a>
+        </div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.2.4/rasterizeHTML.allinone.js" charset="utf-8"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</body>
+
+</html>
