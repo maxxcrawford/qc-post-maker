@@ -7,17 +7,18 @@ html {
 }
 
 body {
-	background: rgba(69, 128, 195, 0.25);
+	background: #004866;
+	/* color: white; */
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
-body.red {
-	background: rgba(231, 65, 65, 0.1);
+.title-wrapper {
+	margin-top: 100px;
+	color: white;
 }
-
 
 /* Canvas */
 
@@ -30,7 +31,7 @@ body.red {
 
 form {
 	display: block;
-	width: 800px;
+	max-width: 1000px;
 	margin: 2em 0;
 }
 
@@ -44,6 +45,7 @@ form label, form input, form textarea {
 
 form label {
 	margin-bottom: 0;
+	color: white;
 }
 
 
@@ -60,22 +62,28 @@ form label {
 /* Download */
 
 .download-wrapper {
-	width: 800px;
-	margin: 0 auto;
+	max-width: 1000px;
+	margin: 0 auto 100px;
 	text-align: left;
+}
+
+.download-wrapper .button {
+	margin-top: 20px;
+	display: block;
+	text-align: center;
 }
 
 .button {
 	padding: 1em 2em;
 	display: inline-block;
-	background: #e74141;
+	background: #E55538;
 	color: #ffffff;
 	transition: background 0.2s ease-out;
 	cursor: pointer;
 }
 
 .button:hover {
-	background: #4580c3;
+	background: #6C6C6C;
 }
 
 .btn {
@@ -83,7 +91,7 @@ form label {
 	max-width: 300px;
 	padding: 1em 0;
 	margin: 0 auto 2em;
-	background: #e74141;
+	background: #E55538;
 	color: #FFFFFF;
 	text-align: center;
 	text-decoration: none;
@@ -91,5 +99,5 @@ form label {
 }
 
 .btn:hover {
-	background: #4580c3;
+	background: #6C6C6C;
 }
