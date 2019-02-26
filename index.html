@@ -11,53 +11,50 @@
 	</head>
 
 	<body>
-        <canvas id="canvas" width="800" height="450"></canvas>
-        <div class="title-wrapper">
-            <h1>200ok Speaker Card Maker</h1>
-        </div>
+		<canvas id="canvas" width="800" height="450"></canvas>
+		<div class="title-wrapper">
+			<h1>200ok Speaker Card Maker</h1>
+		</div>
 		<!-- <a class="btn" href="sponsor.html">Switch to Sponsor Card Maker</a> -->
 		<div id="speaker-wrapper">
-    		<div id="card-display" class="">
-                <link rel="stylesheet" href="css/card-style.css">
-    			<div class="card speaker">
-        			<div class="photo-wrapper">
-        				<div class="photo">
-        					<!-- Replace image here  -->
-        					<img v-bind:src="image_url" alt="">
-        				</div>
-        			</div>
-        			<div class="content-wrapper ">
-        				<img class="logo" src='images/logo.svg' />
-        				<div class="speaker-content-wrapper">
-        					<div class="speaker-content">
-        						<div class="subhead">Come Hear</div>
-        						<!-- Speaker Name -->
-        						<div class="headline">{{ name }}</div>
-        						<div class="subhead">Speak About</div>
-        						<!-- Talk Name -->
-        						<div class="headline red">{{ topic }}</div>
-        					</div>
-        				</div>
-								<div class="date">May 18, 2018 <span>Tulsa, OK</span></div>
-        			</div>
-    			</div>
-                <!-- Form -->
-    			<form>
-    				<label>Speaker Name</label>
-    				<input type="text" v-model="name" placeholder="John Smith">
-    				<label>Speaker Topic</label>
-                    <input v-model="topic" type="text" placeholder="Hello World!">
-    				<label>Image URL</label>
-    				<input type="text" v-model="image_url" placeholder="http://placehold.it/270x400.jpg">
-    			</form>
-    		</div>
+			<div id="card-display" class="">
+				<link rel="stylesheet" href="css/card-style.css">
+				<div class="card speaker">
+					<div class="content-wrapper ">
+						<div class="content-header">
+							<!-- <img class="logo" src='images/logo.svg' /> -->
+							<img class="logo" src='https://placehold.it/200x200/518124/FFFFFF' />
+							<div class="content-header-title">
+								<h1>Question of the Day</h1>
+							</div>
+						</div>
+						<div class="content-image">
+							<div class="photo">
+								<img v-bind:src="image_url" alt="">
+							</div>
+						</div>
+						<div class="content-footer">
+							<div class="question">
+								<h2>{{ question }}</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Form -->
+				<form>
+					<label>Question of the Day</label>
+					<input type="text" v-model="question" placeholder="Lorem ipsum dolor sit amet.">
+					<label>Image URL</label>
+					<input type="text" v-model="image_url" placeholder="http://placehold.it/270x400.jpg">
+				</form>
+			</div>
 		</div>
-        <!-- Results-->
-        <div class="download-wrapper">
-            <a id="download" download="card.png" class="button">Generate Image</a>
-        </div>
+		<!-- Results-->
+		<div class="download-wrapper">
+			<a id="download" download="card.png" class="button">Generate Image</a>
+		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/rasterizehtml/1.2.4/rasterizeHTML.allinone.js" charset="utf-8"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.min.js" charset="utf-8"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.min.js" charset="utf-8"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 
