@@ -6,7 +6,7 @@
 		<title>QC Question of the Day Post Maker</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/normalize.min.css">
 		<link rel="stylesheet" href="css/page-style.css">
 	</head>
 
@@ -24,23 +24,19 @@
 							<img class="logo" src='images/logo.svg' />
 							<img class="question-title" src='images/question.svg' />
 						</div>
-						<div class="content-image">
-							<div class="photo">
-								<img v-bind:src="image_url" alt="">
-							</div>
-						</div>
+						<div class="content-image" v-bind:style="{ backgroundImage: 'url(' + image_url + ')' }"></div>
 						<div class="content-footer">
 							<div class="question">
-								<h2>{{ question }}</h2>
+								<h2 style="white-space: pre-line;">{{ question }}</h2>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Form -->
 				<form>
-					<label>Question of the Day</label>
-					<input type="text" v-model="question" placeholder="Lorem ipsum dolor sit amet.">
-					<label>Image URL <em>(Image must be exactly 1000px wide by 600 px tall.)</em> </label>
+					<label>Question of the Day <em>(Use Shift + Enter to add line breaks)</em> </label>
+					<textarea type="text" v-model="question" placeholder="Lorem ipsum dolor sit amet."></textarea>
+					<label>Image URL <em>(Images work best at a 5:3 ratio)</em> </label>
 					<input type="text" v-model="image_url" placeholder="https://placehold.it/1000x600.jpg">
 				</form>
 			</div>
@@ -59,7 +55,7 @@
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.0/vue.min.js" charset="utf-8"></script>
-		<script type="text/javascript" src="js/dom-to-image.min.js.js"></script>
+		<script type="text/javascript" src="js/dom-to-image.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
 	</body>
 
