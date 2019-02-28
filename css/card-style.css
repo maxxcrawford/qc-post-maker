@@ -70,7 +70,7 @@ body {
 .question {
 	display: flex;
 	min-height: 200px;
-	padding: 2em;
+	padding: 2.5em 2.5em 3em;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -79,9 +79,9 @@ body {
 .question h2 {
 	font-family: 'Oswald', sans-serif;
 	color: #FFFFFF;
-	font-size: 40px;
+	font-size: 64px;
 	font-weight: normal;
-	line-height: 1.2em;
+	line-height: 1.25em;
 	margin: 0;
 	padding: 0;
 }
