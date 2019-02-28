@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "rasterizehtml": "^1.2.4",
+    "dom-to-image": "^2.6.0",
     "vue": "^2.3.0"
   }
 }

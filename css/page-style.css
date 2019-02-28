@@ -34,9 +34,9 @@ body {
 
 /* Canvas */
 
-#canvas {
+/* #canvas {
 	display: none;
-}
+} */
 
 
 /* Form */
@@ -63,7 +63,7 @@ form label {
 
 /* Preview */
 
-#card-display {
+#cardDisplay {
 	width: 1000px;
 	display: block;
 	margin-left: auto;
@@ -113,4 +113,49 @@ form label {
 
 .btn:hover {
 	background: #6C6C6C;
+}
+
+.lightbox {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.85);
+	z-index: 99;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.lightbox.disabled {
+	display: none;
+}
+
+.lightbox button {
+	position: absolute;
+	right: -20px;
+	top: -20px;
+	width: 40px;
+	background: white;
+	color: black;
+	z-index: 100;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	border-radius: 40px;
+}
+
+.lightbox .image-wrapper {
+	position: absolute;
+  left: 50%;
+  top: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 500px;
+	max-height: 500px;
+}
+
+.lightbox .image-wrapper img {
+	display: block;
+	max-width: 100%;
 }
