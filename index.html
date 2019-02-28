@@ -15,18 +15,14 @@
 		<div class="title-wrapper">
 			<h1>QC Question of the Day Post Maker</h1>
 		</div>
-		<!-- <a class="btn" href="sponsor.html">Switch to Sponsor Card Maker</a> -->
 		<div id="speaker-wrapper">
 			<div id="card-display" class="">
 				<link rel="stylesheet" href="css/card-style.css">
 				<div class="card speaker">
 					<div class="content-wrapper ">
 						<div class="content-header">
-							<!-- <img class="logo" src='images/logo.svg' /> -->
-							<img class="logo" src='images/temp-logo.png' />
-							<div class="content-header-title">
-								<h1>Question of the Day</h1>
-							</div>
+							<img class="logo" src='images/logo.svg' />
+							<img class="question-title" src='images/question.svg' />
 						</div>
 						<div class="content-image">
 							<div class="photo">
@@ -44,7 +40,7 @@
 				<form>
 					<label>Question of the Day</label>
 					<input type="text" v-model="question" placeholder="Lorem ipsum dolor sit amet.">
-					<label>Image URL</label>
+					<label>Image URL <em>(Image must be exactly 1000px wide by 600 px tall.)</em> </label>
 					<input type="text" v-model="image_url" placeholder="http://placehold.it/1000x600.jpg">
 				</form>
 			</div>
