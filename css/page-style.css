@@ -16,8 +16,20 @@ body {
 }
 
 .title-wrapper {
-	margin-top: 100px;
+	margin: 100px 0 1em;
 	color: white;
+}
+
+.title-wrapper h1 {
+	line-height: normal;
+	margin-bottom: 0;
+}
+
+.title-wrapper small {
+	text-align: center;
+	font-size: 10px;
+	opacity: 0.5;
+	font-style: italic;
 }
 
 /* Canvas */
