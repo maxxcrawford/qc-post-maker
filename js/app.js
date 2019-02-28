@@ -4,7 +4,7 @@ var downloadLnk = document.getElementById('download')
 var card_preview = new Vue({
 	el: '#speaker-wrapper',
 	data: {
-		image_url: 'http://placehold.it/1000x600.jpg',
+		image_url: 'https://placehold.it/1000x600.jpg',
 		question: 'Lorem ipsum dolor sit amet?'
 	}
 })
