@@ -25,7 +25,6 @@ function preview () {
 					document.getElementById('lightbox').appendChild(img);
 					var element = document.getElementById("lightboxWrapper");
   				element.classList.remove("disabled");
-
 	    })
 	    .catch(function (error) {
 	        console.error('oops, something went wrong!', error);

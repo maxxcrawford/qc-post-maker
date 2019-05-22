@@ -1,4 +1,16 @@
 /* Container */
+/* oswald-regular - latin */
+@font-face {
+	font-family: "Oswald";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Oswald Regular"), local("Oswald-Regular"),
+		url("fonts/oswald-v17-latin-regular.woff2") format("woff2"),
+		/* Chrome 26+, Opera 23+, Firefox 39+ */
+		url("fonts/oswald-v17-latin-regular.woff") format("woff");
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
 	box-sizing: border-box;
 	background: transparent;
@@ -8,6 +20,7 @@ body {
 	font-size: 16px;
 	margin: 0;
 	padding: 0;
+	/* font-family: "Oswald", sans-serif; */
 }
 
 /* Layout */
@@ -77,7 +90,7 @@ body {
 }
 
 .question h2 {
-	font-family: 'Oswald', sans-serif;
+	font-family: "Oswald", sans-serif;
 	color: #FFFFFF;
 	font-size: 56px;
 	font-weight: normal;
